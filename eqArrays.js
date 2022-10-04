@@ -8,22 +8,37 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length >= arr2.length) {
-    arrLength = arr1.length;
-  } else if (arr2.length > arr1.length) {
-    arrLength = arr2.length;
-  }
-  let bool = true;
-  for (let i = 0; i < arrLength; i++) {
-    if (arr1[i] === arr2[i]) {
-      bool = true;
-    } else {
-      bool = false;
-    }
-  } return bool;
-};
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length >= arr2.length) {
+//     arrLength = arr1.length;
+//   } else if (arr2.length > arr1.length) {
+//     arrLength = arr2.length;
+//   }
+//   let bool = true;
+//   for (let i = 0; i < arrLength; i++) {
+//     if (arr1[i] === arr2[i]) {
+//       bool = true;
+//     } else {
+//       bool = false;
+//     }
+//   } return bool;
+// };
 
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  } else {
+    let bool = true;
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] === arr2[i]) {
+        bool = true;
+      } else {
+        bool = false;
+      }
+    } return bool;
+  }
+};
+  
 eqArrays([1, 2, 3], [1, 2, 3]); // => true
 eqArrays([1, 2, 3], [3, 2, 1]); // => false
 
@@ -40,4 +55,4 @@ assertEqual(eqArrays([],[]), true);
 assertEqual(eqArrays(["Word"],["Word"]), true);
 
 
-//for this function i should change the arrLength i made into an if statement that just fails if they are not the same length
+

@@ -1,17 +1,16 @@
 const eqArrays = function(arr1, arr2) {
-  if (arr1.length >= arr2.length) {
-    arrLength = arr1.length;
-  } else if (arr2.length > arr1.length) {
-    arrLength = arr2.length;
+  if (arr1.length !== arr2.length) {
+    return false;
+  } else {
+    let bool = true;
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] === arr2[i]) {
+        bool = true;
+      } else {
+        bool = false;
+      }
+    } return bool;
   }
-  let bool = true;
-  for (let i = 0; i < arrLength; i++) {
-    if (arr1[i] === arr2[i]) {
-      bool = true;
-    } else {
-      bool = false;
-    }
-  } return bool;
 };
 
 const eqObjects = function(object1, object2) {
