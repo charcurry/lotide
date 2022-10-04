@@ -38,12 +38,12 @@ const assertObjectsEqual = function(actual, expected) {
   const errmsg = `🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`;
   const passmsg = `✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`;
   if (eqObjects(actual, expected) === true) {
-    console.log(passmsg) 
+    console.log(passmsg);
   } else {
-    console.log(errmsg)
+    console.log(errmsg);
   }
 };
 
-assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1' })
-assertObjectsEqual({ a: 1, b: 2 }, { b: 2, a: '1' })
-assertObjectsEqual({ a: '1', b: 2, c: 3}, { b: 2, a: '1' })
+assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1' });
+assertObjectsEqual({ a: 1, b: 2 }, { b: 2, a: '1' });
+assertObjectsEqual({ a: '1', b: 2, c: 3}, { b: 2, a: '1' });

@@ -1,51 +1,51 @@
 const eqArrays = function(arr1, arr2) {
   if (arr1.length >= arr2.length) {
-    arrLength = arr1.length
+    arrLength = arr1.length;
   } else if (arr2.length > arr1.length) {
-    arrLength = arr2.length
+    arrLength = arr2.length;
   }
-  let bool = true
+  let bool = true;
   for (let i = 0; i < arrLength; i++) {
     if (arr1[i] === arr2[i]) {
-      bool = true
+      bool = true;
     } else {
-      bool = false
+      bool = false;
     }
-  } return bool
-}
+  } return bool;
+};
 
 const assertArraysEqual = function(arr1, arr2) {
   const errmsg = `🛑 Assertion Failed: ${arr1} !== ${arr2}`;
   const passmsg = `✅ Assertion Passed: ${arr1} === ${arr2}`;
   if (eqArrays(arr1, arr2) === true) {
-    console.log(passmsg)
+    console.log(passmsg);
   } else if (eqArrays(arr1, arr2) === false) {
-    console.log(errmsg)
+    console.log(errmsg);
   }
-}
+};
 
 
 const letterPositions = function(sentence) {
   const results = {};
-  let i = 0
+  let i = 0;
   for (letter of sentence) {
     if (letter === " ") {
-      i++
-      continue
+      i++;
+      continue;
     } else if (results[letter]) {
       results[letter].push(i);
     } else {
       results[letter] = [i];
-    } i++
+    } i++;
   } return results;
 };
 
 
 
-letterPositions("lighthouse in the house")
+letterPositions("lighthouse in the house");
 
 // answer =
-// { 
+// {
 //   l: [0],
 //   i: [1, 11],
 //   g: [2],
@@ -58,7 +58,7 @@ letterPositions("lighthouse in the house")
 //   n: [12]
 // }
 
-const sentenceExample = "lighthouse in the house"
+const sentenceExample = "lighthouse in the house";
 
 const result1 = letterPositions(sentenceExample);
 

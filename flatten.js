@@ -1,28 +1,28 @@
 const eqArrays = function(arr1, arr2) {
   if (arr1.length >= arr2.length) {
-    arrLength = arr1.length
+    arrLength = arr1.length;
   } else if (arr2.length > arr1.length) {
-    arrLength = arr2.length
+    arrLength = arr2.length;
   }
-  let bool = true
+  let bool = true;
   for (let i = 0; i < arrLength; i++) {
     if (arr1[i] === arr2[i]) {
-      bool = true
+      bool = true;
     } else {
-      bool = false
+      bool = false;
     }
-  } return bool
-}
+  } return bool;
+};
 
 const assertArraysEqual = function(arr1, arr2) {
   const errmsg = `🛑 Assertion Failed: ${arr1} !== ${arr2}`;
   const passmsg = `✅ Assertion Passed: ${arr1} === ${arr2}`;
   if (eqArrays(arr1, arr2) === true) {
-    console.log(passmsg)
+    console.log(passmsg);
   } else if (eqArrays(arr1, arr2) === false) {
-    console.log(errmsg)
+    console.log(errmsg);
   }
-}
+};
 
 const flatten = function(array) {
   let arr = [];
