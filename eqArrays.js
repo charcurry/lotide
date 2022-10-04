@@ -38,3 +38,6 @@ assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false);
 assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false);
 assertEqual(eqArrays([],[]), true);
 assertEqual(eqArrays(["Word"],["Word"]), true);
+
+
+//for this function i should change the arrLength i made into an if statement that just fails if they are not the same length
