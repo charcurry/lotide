@@ -60,3 +60,5 @@ const cd2 = { c: "1", d: ["2", 3, 4] };
 assertEqual(eqObjects(cd, cd2), false);
 
 //eqArrays(object1[key], object2[key])
+
+module.exports = eqObjects;

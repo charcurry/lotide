@@ -48,3 +48,5 @@ assertEqual(findKey({
 }, x => x.stars === 2), "noma")
 assertEqual(findKey({ d: ["2", 3], c: "1" }, x => x === "1"), "c")
 assertEqual(findKey({ "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }, x => x === false), "Agouhanna")
+
+module.exports = findKey;

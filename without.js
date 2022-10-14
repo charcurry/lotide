@@ -55,3 +55,5 @@ assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 //newArr.splice(i, 1)
 
 //filter and include array prototype; spread operator
+
+module.exports = without;

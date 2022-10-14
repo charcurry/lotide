@@ -57,3 +57,5 @@ assertArraysEqual(takeUntil(data2, x => x === ','), [ 'I\'ve', 'been', 'to', 'Ho
 //} else if (!found) {
 //  arr.push[i]
 //}
+
+module.exports = takeUntil;
