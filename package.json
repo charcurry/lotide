@@ -1,6 +1,6 @@
 {
   "name": "@charlielhl/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Charlie Curry's lotide project for Lighthouse Labs",
   "main": "assertArraysEqual.js",
   "directories": {
