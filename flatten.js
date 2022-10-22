@@ -1,27 +1,4 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  } else {
-    let bool = true;
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] === arr2[i]) {
-        bool = true;
-      } else {
-        bool = false;
-      }
-    } return bool;
-  }
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  const errmsg = `🛑 Assertion Failed: ${arr1} !== ${arr2}`;
-  const passmsg = `✅ Assertion Passed: ${arr1} === ${arr2}`;
-  if (eqArrays(arr1, arr2) === true) {
-    console.log(passmsg);
-  } else if (eqArrays(arr1, arr2) === false) {
-    console.log(errmsg);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual')
 
 const flatten = function(array) {
   let arr = [];
